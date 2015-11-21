@@ -39,6 +39,6 @@ Make your button support global menu function easily
 
 ##Demo
 
-![Screencapture GIF](https://www.dropbox.com/s/m8zyc3qikr2qxrf/demo1.gif?dl=0)
+![Screencapture GIF](https://www.dropbox.com/s/m8zyc3qikr2qxrf/demo1.gif)
 
 待添加...

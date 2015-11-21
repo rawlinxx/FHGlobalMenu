@@ -6,12 +6,13 @@ Make your button support global menu function easily
 #import "FHGlobalMenu.h"
 
 
-1.  [yourButton fh_addGlobalMenuFunction_WithPopDirection:FH_PopDirection_Upward HUDStyle:UIBlurEffectStyleLight];
+1.  [yourButton fh_addGlobalMenuFunction_WithPopDirection:FH_PopDirection_Upward
+                                                 HUDStyle:UIBlurEffectStyleLight];
 
 2.  yourButton.addPopButton(btn1).addPopButton(btn2).addPopButton(btn3).addPopButton(btn4);
 
 3. /** 可选 */   也可自己手动添加按钮监听
-    [self.viewMenuBtn fh_anyPopButtonClick_Operation:^(NSInteger buttonTag, UIViewController *currentViewController) {
+    [yourButton fh_anyPopButtonClick_Operation:^(NSInteger buttonTag, UIViewController *currentViewController) {
         
         switch (buttonTag) {
             case 10001:

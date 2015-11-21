@@ -6,6 +6,7 @@
 CGFloat const FHGlobalMenu_ButtonMargin = 60;
 /** 弹出 button 与 label 的间隙 */
 CGFloat const FHGlobalMenu_Button2LabelMargin = 40;
+CGFloat const FHGlobalMenu_Button2LabelMargin = 10;
 /** 弹出 button 允许使用 tag 范围的起始值 (往后递增1) */
 CGFloat const FHMenuButtonTagRangeBegin = 10001; // 第一个 popButton.tag = 10001, 往后按照添加顺序 +1
 /** 弹出 label 字体大小 */

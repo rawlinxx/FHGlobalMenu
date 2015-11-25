@@ -6,14 +6,27 @@ Make your button support global menu function easily
 
 
 
+Inspired by teambition
+
 ![demo1](https://github.com/rawlinxx/FHGlobalMenu/blob/master/demo1.gif)
 
-## 如何使用
+## 介绍
+
+就可以为你指定的目标按钮添加菜单功能, 并且可以配置菜单弹出方向和蒙板的颜色类型
+
+- 步骤:
+- 在项目中导入"FHGlobalMenu.h"主头文件
+- `目标按钮`使用`fh_addGlobalMenuFunction_WithPopDirection: HUDStyle:`方法
+- `目标按钮`使用`addPopButton`方法,后面加个`(你想要显示到菜单中的按钮)`    **传进去的按钮可以是任意按钮,或者使用提供的模板按钮"FHGlobalMenuButton"**,每一次只加一个.
+- 集成成功! 你点击`目标按钮`就会弹出菜单, 并且可以使用`fh_anyPopButtonClick_Operation:`方法监听所有菜单上的按钮.
+
+
+## 使用示例
 
 
 
 ``` objective-c
-// 注意: 该 addBtn 不要使用 autoLayout, 否则会 "呵呵...", 建议使用代码创建
+// 注意: yourBtn 不要使用 autoLayout, 否则会 "呵呵...", 建议使用代码创建
 
 /* 为你的按钮_添加菜单功能 */
         [yourButton fh_addGlobalMenuFunction_WithPopDirection:FH_PopDirection_Downward HUDStyle:UIBlurEffectStyleLight];

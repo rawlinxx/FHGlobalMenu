@@ -12,12 +12,15 @@ Inspired by teambition
 
 ## 介绍
 
-就可以为你指定的目标按钮添加菜单功能, 并且可以配置菜单弹出方向和蒙板的颜色类型
+>  只需要 ***两行代码*** 就可以为你指定的目标按钮添加菜单功能 (无论它在 `TabBar`, `NavBar`, `anyView`, `anyWhere!`) 并且可以配置菜单弹出方向和蒙板的颜色类型
+
+
+>  菜单按钮支持完全自定义, 提供额外可选接口统一监听按钮点击
 
 - 步骤:
-- 在项目中导入"FHGlobalMenu.h"主头文件
-- `目标按钮`使用`fh_addGlobalMenuFunction_WithPopDirection: HUDStyle:`方法
-- `目标按钮`使用`addPopButton`方法,后面加个`(你想要显示到菜单中的按钮)`    **传进去的按钮可以是任意按钮,或者使用提供的模板按钮"FHGlobalMenuButton"**,每一次只加一个.
+- 在项目中导入"FHGlobalMenu.h"主头文件.
+- `目标按钮`调用`fh_addGlobalMenuFunction_WithPopDirection: HUDStyle:`方法.
+- `目标按钮`调用`addPopButton`方法(链条式语法)添加菜单按钮, 后面加个`(你想要显示到菜单中的按钮)`    **传进去的按钮可以是任意按钮,或者使用提供的模板按钮"FHGlobalMenuButton"**,每一次只加一个.
 - 集成成功! 你点击`目标按钮`就会弹出菜单, 并且可以使用`fh_anyPopButtonClick_Operation:`方法监听所有菜单上的按钮.
 
 
